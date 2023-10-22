@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .container {
+    @apply !w-full !px-[.75rem] mx-auto xl:!max-w-[1300px] lg:!max-w-[1080px] md:!max-w-[720px] sm:!max-w-[576px];
+  }
+
+  .smooth {
+    @apply transition duration-200;
+  }
+}
