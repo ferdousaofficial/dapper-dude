@@ -11,3 +11,10 @@
     @apply transition duration-200;
   }
 }
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-playfairDisplay);
+  color: #1e1e1e;
+}

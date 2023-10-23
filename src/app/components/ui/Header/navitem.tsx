@@ -7,10 +7,12 @@ interface NavItemsProps {
   icons?: boolean | null;
 }
 
-const navitems: React.FC<NavItemsProps> = ({ menu, icons }) => {
+const navitem: React.FC<NavItemsProps> = ({ menu, icons }) => {
   return (
     <div>
-      <ul className={`flex items-center ${menu ? "gap-10" : "gap-1"}`}>
+      <ul
+        className={`lg:flex hidden items-center ${menu ? "gap-10" : "gap-1"}`}
+      >
         {menu
           ? navData.navItem.map((e) => (
               <Link href={e.path} key={e.id}>
@@ -30,4 +32,4 @@ const navitems: React.FC<NavItemsProps> = ({ menu, icons }) => {
     </div>
   );
 };
-export default navitems;
+export default navitem;

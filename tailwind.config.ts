@@ -13,6 +13,9 @@ const config: Config = {
         text: "#606d7e",
         black: "#010101",
       },
+      fontFamily: {
+        playfairDisplay: "var(--font-playfairDisplay)",
+      },
     },
   },
   plugins: [],
