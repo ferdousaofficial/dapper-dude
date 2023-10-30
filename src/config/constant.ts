@@ -13,6 +13,7 @@ export const navData: NavData = {
     { name: "sales", path: "/sales", id: 2 },
   ],
   navButtons: [
+    { name: "search", path: "/", id: 1 },
     { name: "heart", path: "/", id: 1 },
     { name: "bag", path: "/", id: 2 },
     { name: "user", path: "/", id: 0 },

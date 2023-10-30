@@ -17,16 +17,15 @@ const header: React.FC = () => {
           {/* toggle mobile menu button */}
           <div className="lg:hidden absolute right-4">
             <button
-              className={`uppercase text-title font-semibold text-[15px] tracking-wider ${
-                toggleMenu && "text-white"
-              }`}
+              className={`relative z-10 uppercase text-title font-semibold text-[14px] `}
+              onClick={() => setToggleMenu(!toggleMenu)}
             >
               {!toggleMenu ? "menu" : "close"}
             </button>
           </div>
 
           {/* mobile menu */}
-          <MobileMenu />
+          <MobileMenu toggleMenu={toggleMenu} />
 
           {<NavItem menu={true} />}
           {<NavItem icons={true} />}
