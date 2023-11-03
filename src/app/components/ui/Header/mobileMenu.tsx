@@ -33,6 +33,7 @@ const mobileMenu: React.FC<mobileMenuProps> = ({ toggleMenu }) => {
                   animate="enter"
                   exit={"exit"}
                   initial="initial"
+                  key={e.id}
                 >
                   <Link href={e.path} key={e.id}>
                     <li className="md:text-[40px] text-[36px] text-black uppercase font-semibold py-2">
@@ -52,6 +53,7 @@ const mobileMenu: React.FC<mobileMenuProps> = ({ toggleMenu }) => {
                   exit={"exit"}
                   initial="initial"
                   className={`${toggleMenu && "opacity-100"} opacity-0`}
+                  key={e.id}
                 >
                   <Link href={e.path} key={e.id}>
                     <Icon name={e.name} className="text-[25px] text-black " />

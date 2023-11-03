@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Nunito, Playfair_Display } from "next/font/google";
+import { Nunito, Alumni_Sans } from "next/font/google";
 
 import "@/styles/globals.css";
-import Header from "./components/ui/Header/header";
+import Header from "./components/ui/Header/Header";
 
 // font customizations
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  variable: "--font-Nunito",
 });
-const playfair_Display = Playfair_Display({
+const alumni_Sans = Alumni_Sans({
   subsets: ["latin"],
   weight: ["600", "700", "800"],
-  variable: "--font-playfairDisplay",
+  variable: "--font-Alumni_Sans",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair_Display.variable} ${nunito.className} bg-[#fff] text-[#7e8a93]`}
+        className={`${alumni_Sans.variable} ${nunito.variable} bg-[#fff] text-[#7e8a93]`}
       >
         <Header />
         {children}

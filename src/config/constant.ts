@@ -14,7 +14,6 @@ export const navData: NavData = {
   ],
   navButtons: [
     { name: "search", path: "/", id: 1 },
-    { name: "heart", path: "/", id: 1 },
     { name: "bag", path: "/", id: 2 },
     { name: "user", path: "/", id: 0 },
   ],

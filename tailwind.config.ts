@@ -14,7 +14,8 @@ const config: Config = {
         black: "#010101",
       },
       fontFamily: {
-        playfairDisplay: "var(--font-playfairDisplay)",
+        alumniSans: "var(--font-Alumni_Sans)",
+        nunito: " var(--font-Nunito)",
       },
     },
   },
